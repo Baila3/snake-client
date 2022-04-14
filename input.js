@@ -34,6 +34,11 @@ const handleUserInput = function (key, connection) {
     setInterval(() => {
     connection.write("Move: right")
   }, 500)
+  if (key === "t"){
+    setTimeout(() => {
+    connection.write("Say: Family")
+  }, 1000)
+}
 }
 };
 module.exports = {
